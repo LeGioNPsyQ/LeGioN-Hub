@@ -34,10 +34,10 @@ local Window = CreateWindow()
 
 --#####################################################################################################################################################
 --## Create Tab
-local Infos = Window:CreateTab("Information", 4483362458)
 local Main = Window:CreateTab("Main", 4483362458)
 local Pets = Window:CreateTab("Pets", 4483362458)
 local Misc = Window:CreateTab("Misc", 4483362458)
+local Infos = Window:CreateTab("Information", 4483362458)
 --#####################################################################################################################################################
 
 Main:CreateSection("Mining")
