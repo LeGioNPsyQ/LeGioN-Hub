@@ -170,7 +170,7 @@ Misc:CreateButton({
 	Name = "🐦 Redeem all Codes",
 	Interact = 'redeem',
 	Callback = function()
-		for _,v in pairs({"release", "wow500likes", "likes1000thx", "update1", "newgame", "thx2500likes", "update2", "visits2m", "insane20klikes"}) do
+		for _,v in pairs({"release", "wow500likes", "likes1000thx", "update1", "newgame", "thx2500likes", "update2", "visits2m", "insane20klikes", "update8", "visits8m"}) do
 			game:GetService("ReplicatedStorage").Knit.Services.CodeService.RF.UseCode:InvokeServer(v)
 			print("[LeGioN Hub] Debug: Redeemed code "..v)
 			task.wait(2)
