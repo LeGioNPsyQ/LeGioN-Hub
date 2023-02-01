@@ -34,10 +34,10 @@ local Window = CreateWindow()
 
 --#####################################################################################################################################################
 --## Create Tab
-local Main = Window:CreateTab("Main", 4483362458)
-local Pets = Window:CreateTab("Pets", 4483362458)
-local Misc = Window:CreateTab("Misc", 4483362458)
 local Infos = Window:CreateTab("Information", 4483362458)
+local Main = Window:CreateTab("Main", 4483362458)
+local Misc = Window:CreateTab("Misc", 4483362458)
+local Pets = Window:CreateTab("Pets", 4483362458)
 --#####################################################################################################################################################
 
 Main:CreateSection("Mining")
@@ -386,14 +386,15 @@ end)
 
 
 
+
 Infos:CreateSection("Script Information")
 Infos:CreateButton({
 	Name = "Discord",
 	Info = "LeGioN_PsyQ#3114",
 	Interact = '',
 	Callback = function(Value)	end,
-	setclipboard("text going to clipboard goes here")
-	toclipboard("same for this")
+	setclipboard("LeGioN_PsyQ#3114"),
+    print("Text copy on Clipboard")
 })
 Infos:CreateButton({
 	Name = "LeGioN Hub",
