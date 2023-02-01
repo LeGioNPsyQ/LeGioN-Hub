@@ -406,8 +406,8 @@ Infos:CreateButton({
 	Callback = function(Value)	end,
 })
 Infos:CreateButton({
-	Name = "Inspirated",
-	Info = "Idea and inspiration from Inferno X",
+	Name = "inspirations",
+	Info = "Idea and inspirations from Inferno X",
 	Interact = '',
 	Callback = function(Value)	end,
 })
