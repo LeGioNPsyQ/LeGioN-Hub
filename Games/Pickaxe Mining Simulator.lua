@@ -1,4 +1,4 @@
-local Player, Rayfield, Click, comma, Notify, CreateWindow, CurrentVersion, CreateLabel = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Variables/Variables.lua"))()
+local Player, Rayfield, Click, comma, Notify, CreateWindow, CurrentVersion = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Variables/Variables.lua"))()
 
 CurrentVersion("v1.1")
 
@@ -32,10 +32,15 @@ end
 
 local Window = CreateWindow()
 
+--#####################################################################################################################################################
+--## Create Tab
+local Infos = Window:CreateTab("Information", 4483362458)
 local Main = Window:CreateTab("Main", 4483362458)
+local Misc = Window:CreateTab("Misc", 4483362458)
+local Pets = Window:CreateTab("Pets", 4483362458)
+--#####################################################################################################################################################
 
 Main:CreateSection("Mining")
-
 Main:CreateDropdown({
 	Name = "🌏 Area",
 	Options = Areas,
@@ -78,7 +83,7 @@ task.spawn(function()
 					repeat task.wait() until not v or not SelectedArea:FindFirstChild(v.Name) or not Rayfield.Flags.Mine.CurrentValue or ChildAdded or (tick() - StartTime > 2 and Player.PlayerGui.Main.Prompts.Click.DPS.Text == "DPS: 0")
 
 					if not ChildAdded then
-						print("[Inferno X] Debug: Mined "..v.Name.." in "..math.round(tick() - StartTime).." seconds")
+						print("[LeGioN Hub] Debug: Mined "..v.Name.." in "..math.round(tick() - StartTime).." seconds")
 					else
 						ChildAdded = false
 					end
@@ -120,9 +125,11 @@ task.spawn(function()
 	end
 end)
 
-Main:CreateSection("Other")
 
-Main:CreateToggle({
+
+
+Misc:CreateSection("Other")
+Misc:CreateToggle({
 	Name = "🎁 Auto Claim Rewards",
 	CurrentValue = false,
 	Flag = "Rewards",
@@ -139,7 +146,7 @@ task.spawn(function()
 	end
 end)
 
-Main:CreateToggle({
+Misc:CreateToggle({
 	Name = "🏆 Auto Claim Quests",
 	CurrentValue = false,
 	Flag = "Quests",
@@ -159,13 +166,13 @@ task.spawn(function()
 	end
 end)
 
-Main:CreateButton({
+Misc:CreateButton({
 	Name = "🐦 Redeem all Codes",
 	Interact = 'redeem',
 	Callback = function()
 		for _,v in pairs({"release", "wow500likes", "likes1000thx", "update1", "newgame", "thx2500likes", "update2", "visits2m", "insane20klikes"}) do
 			game:GetService("ReplicatedStorage").Knit.Services.CodeService.RF.UseCode:InvokeServer(v)
-			print("[Inferno X] Debug: Redeemed code "..v)
+			print("[LeGioN Hub] Debug: Redeemed code "..v)
 			task.wait(2)
 		end
 	end,
@@ -187,11 +194,12 @@ Teleport = Main:CreateDropdown({
 	end,
 })
 
-local Items = Window:CreateTab("Items/Pets", 4483362458)
 
-Items:CreateSection("Hatching")
 
-Items:CreateDropdown({
+
+
+Pets:CreateSection("Hatching")
+Pets:CreateDropdown({
 	Name = "🥚 Egg",
 	Options = Eggs,
 	CurrentOption = "",
@@ -199,7 +207,7 @@ Items:CreateDropdown({
 	Callback = function(Option)	end,
 })
 
-Items:CreateDropdown({
+Pets:CreateDropdown({
 	Name = "🔢 Amount",
 	Options = {"1", "2", "3"},
 	CurrentOption = "1",
@@ -207,7 +215,7 @@ Items:CreateDropdown({
 	Callback = function(Option)	end,
 })
 
-Items:CreateToggle({
+Pets:CreateToggle({
 	Name = "🐣 Auto Hatch Egg",
 	CurrentValue = false,
 	Flag = "Hatch",
@@ -222,9 +230,9 @@ task.spawn(function()
 	end
 end)
 
-Items:CreateSection("Equipping")
+Pets:CreateSection("Equipping")
 
-Items:CreateToggle({
+Pets:CreateToggle({
 	Name = "👍 Auto Equip Best Pickaxe",
 	CurrentValue = false,
 	Flag = "BestPick",
@@ -238,7 +246,7 @@ Player.PlayerGui.Main.Prompts.Inventory.ScrollingFrame.ChildAdded:Connect(functi
 	end
 end)
 
-Items:CreateToggle({
+Pets:CreateToggle({
 	Name = "👎 Auto Equip Best Pet",
 	CurrentValue = false,
 	Flag = "BestPet",
@@ -251,9 +259,9 @@ Player.PlayerGui.Main.Prompts.PetInventory.ScrollingFrame.ChildAdded:Connect(fun
 	end
 end)
 
-Items:CreateSection("Giant")
 
-Items:CreateToggle({
+Pets:CreateSection("Giant")
+Pets:CreateToggle({
 	Name = "⚒ Auto Giant Pets",
 	Info = "Turns 5 of the same pet into a giant!",
 	CurrentValue = false,
@@ -281,7 +289,7 @@ local function Giant(ToGiant, ScrollingFrame, Remote)
 
 			for e = 1, 5 do
 				Selected[Items[i].Ids[e]] = true
-				print("[Inferno X] Debug: Selected Giant ID "..Items[i].Ids[e])
+				print("[LeGioN Hub] Debug: Selected Giant ID "..Items[i].Ids[e])
 			end
 
 			Services.GiantService.RF[Remote]:InvokeServer({["Current"..ToGiant] = Items[i].Ids[1], ["Chosen"] = Selected})
@@ -297,7 +305,7 @@ task.spawn(function()
 	end
 end)
 
-Items:CreateToggle({
+Pets:CreateToggle({
 	Name = "🛠 Auto Giant Pickaxes",
 	Info = "Turns 5 of the same pickaxe into a giant!",
 	CurrentValue = false,
@@ -314,8 +322,8 @@ task.spawn(function()
 end)
 
 
-Items:CreateSection("Rainbow")
-Items:CreateToggle({
+Pets:CreateSection("Rainbow")
+Pets:CreateToggle({
 	Name = "⚒ Auto Rainbow Pets",
 	Info = "Turns 5 Giant Pet into a Rainbow!",
 	CurrentValue = false,
@@ -343,7 +351,7 @@ local function Rainbow(ToRainbow, ScrollingFrame, Remote)
 
 			for e = 1, 5 do
 				Selected[Items[i].Ids[e]] = true
-				print("[Inferno X] Debug: Selected Rainbow ID "..Items[i].Ids[e])
+				print("[LeGioN Hub] Debug: Selected Rainbow ID "..Items[i].Ids[e])
 			end
 
 			Services.RainbowService.RF[Remote]:InvokeServer({["Current"..ToRainbow] = Items[i].Ids[1], ["Chosen"] = Selected})
@@ -359,7 +367,7 @@ task.spawn(function()
 	end
 end)
 
-Items:CreateToggle({
+Pets:CreateToggle({
 	Name = "🛠 Auto Rainbow Pickaxes",
 	Info = "Turns 5 Giant Pickaxe into a Rainbow!",
 	CurrentValue = false,
@@ -374,20 +382,32 @@ task.spawn(function()
 		end
 	end
 end)
-local Infos = Window:CreateTab("Information", 4483362458)
+
+
+
+
 Infos:CreateSection("Script Information")
+Infos:CreateButton({
+	Name = "Discord",
+	Info = "LeGioN_PsyQ#3114",
+	Interact = '',
+	Callback = function(Value)	end,
+})
 Infos:CreateButton({
 	Name = "LeGioN Hub",
 	Info = "powered by LeGioN_PsyQ",
+	Interact = '',
 	Callback = function(Value)	end,
 })
 Infos:CreateButton({
 	Name = "Rainbow Pet/Pickaxe",
 	Info = "scripting by LeGioN_PsyQ",
+	Interact = '',
 	Callback = function(Value)	end,
 })
 Infos:CreateButton({
 	Name = "Inspirated",
 	Info = "Idea and inspiration from Inferno X",
+	Interact = '',
 	Callback = function(Value)	end,
 })
