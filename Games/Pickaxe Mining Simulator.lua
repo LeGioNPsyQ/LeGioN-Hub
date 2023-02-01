@@ -374,3 +374,20 @@ task.spawn(function()
 		end
 	end
 end)
+local Infos = Window:CreateTab("Information", 4483362458)
+Infos:CreateSection("Script Information")
+Infos:CreateButton({
+	Name = "LeGioN Hub",
+	Info = "powered by LeGioN_PsyQ",
+	Callback = function(Value)	end,
+})
+Infos:CreateButton({
+	Name = "Rainbow Pet/Pickaxe",
+	Info = "scripting by LeGioN_PsyQ",
+	Callback = function(Value)	end,
+})
+Infos:CreateButton({
+	Name = "Inspirated",
+	Info = "Idea and inspiration from Inferno X",
+	Callback = function(Value)	end,
+})
