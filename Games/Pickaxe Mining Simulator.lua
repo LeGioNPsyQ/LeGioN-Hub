@@ -392,6 +392,8 @@ Infos:CreateButton({
 	Info = "LeGioN_PsyQ#3114",
 	Interact = '',
 	Callback = function(Value)	end,
+	setclipboard("text going to clipboard goes here")
+	toclipboard("same for this")
 })
 Infos:CreateButton({
 	Name = "LeGioN Hub",
