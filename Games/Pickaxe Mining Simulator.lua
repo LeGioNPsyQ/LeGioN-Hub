@@ -163,7 +163,7 @@ Main:CreateButton({
 	Name = "🐦 Redeem all Codes",
 	Interact = 'redeem',
 	Callback = function()
-		for _,v in pairs({"release", "wow500likes", "likes1000thx", "update1", "newgame", "thx2500likes", "update2", "visits2m"}) do
+		for _,v in pairs({"release", "wow500likes", "likes1000thx", "update1", "newgame", "thx2500likes", "update2", "visits2m", "insane20klikes"}) do
 			game:GetService("ReplicatedStorage").Knit.Services.CodeService.RF.UseCode:InvokeServer(v)
 			print("[Inferno X] Debug: Redeemed code "..v)
 			task.wait(2)
