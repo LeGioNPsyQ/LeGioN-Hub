@@ -256,7 +256,6 @@ Pets:CreateToggle({
 
 Player.PlayerGui.Main.Prompts.PetInventory.ScrollingFrame.ChildAdded:Connect(function(Child)
 	if Rayfield.Flags.BestPet.CurrentValue and Child.ClassName == "ImageButton" then
-		ChildAdded = true
 		firesignal(Player.PlayerGui.Main.Prompts.PetInventory.EquipBest.Activated)
 	end
 end)
