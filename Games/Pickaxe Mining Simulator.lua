@@ -84,7 +84,7 @@ task.spawn(function()
 					repeat task.wait() until not v or not SelectedArea:FindFirstChild(v.Name) or not Rayfield.Flags.Mine.CurrentValue or ChildAdded or (tick() - StartTime > 2 and Player.PlayerGui.Main.Prompts.Click.DPS.Text == "DPS: 0")
 
 					if not ChildAdded then
-						print("[LeGioN Hub] Debug: Mined "..v.Name.." in "..math.round(tick() - StartTime).." seconds")
+						--print("[LeGioN Hub] Debug: Mined "..v.Name.." in "..math.round(tick() - StartTime).." seconds")
 					else
 						ChildAdded = false
 					end
