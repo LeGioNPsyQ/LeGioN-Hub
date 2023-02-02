@@ -74,7 +74,7 @@ task.spawn(function()
 						pcall(function()
 							if r.ClassName == "ImageButton" and r:FindFirstChild("Equipped") and r.Equipped.Visible then
 								Services.MineableService.RF.MovePickaxe:InvokeServer({["Mineable"] = v, ["PickaxeId"] = r.Name})
-								--Services.MineableService.RF.StartMining:InvokeServer({["Mineable"] = v, ["PickaxeId"] = r.Name})
+								Services.MineableService.RF.StartMining:InvokeServer({["Mineable"] = v, ["PickaxeId"] = r.Name})
 							end
 						end)
 					end
