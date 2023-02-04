@@ -4,7 +4,9 @@ local Games = {
 	[9264596435] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Idle%20Heroes%20Simulator.lua", -- Idle Heroes Simulator
 	[10925589760] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Merge%20Simulator.lua", -- Merge Simulator
 	[11445923563] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/One%20Fruit%20Simulator.lua", -- One Fruit Simulator
-	[8540346411] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Rebirth%20Champion%20X.lua" -- Rebirth Champions X
+--	[8540346411] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Rebirth%20Champion%20X.lua" -- Rebirth Champions X
+	[8540346411] = "https://raw.githubusercontent.com/KrystekYTpv/Scripts/main/RebirthChampionsX.lua", -- Rebirth Chamption X
+
 }
 
 if Games[game.PlaceId] then
