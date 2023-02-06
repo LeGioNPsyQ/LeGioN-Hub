@@ -1,5 +1,5 @@
 local Games = {
-	[8540346411] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Rebirth%20Champion%20X.lua" -- Rebirth Champions X
+	[8540346411] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Rebirth%20Champion%20X.lua", -- Rebirth Champions X
 	[10821317529] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Pickaxe%20Mining%20Simulator.lua", -- Pickaxe Mining Simulator
 
 	[10404327868] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Timber%20Champions.lua", -- Timber Champions
