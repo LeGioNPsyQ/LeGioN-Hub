@@ -8,7 +8,6 @@ local Games = {
 	[11445923563] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/One%20Fruit%20Simulator.lua", -- One Fruit Simulator
 	
 	[11599913094] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Nuke%20Simulator.lua" -- Nuke Simulator
-
 }
 
 if Games[game.PlaceId] then
