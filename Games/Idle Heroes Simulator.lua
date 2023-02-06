@@ -239,7 +239,7 @@ task.spawn(function()
 				IsInLoopReincarnate = false
 			elseif tonumber(Player.PlayerGui.Main.Top.Level.Text:split(" ")[2]) > RequiredLevel or (tonumber(Player.PlayerGui.Main.Top.Level.Text:split(" ")[2]) == RequiredLevel and Player.PlayerGui.Main.Top.Level.Text:split(" ")[3] == "Complete!") then
 				RequiredLevel = RequiredLevel + 10
-				print("[Inferno X] Debug: Set RequiredLevel to "..RequiredLevel)
+				print("[LeGioN Hub] Debug: Set RequiredLevel to "..RequiredLevel)
 			end
 		end
 	end
@@ -457,7 +457,7 @@ task.spawn(function()
 						end
 
 						if game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.HeroService.RF.BuyLevel:InvokeServer(SelectedHero, 0) then
-							print("[Inferno X] Debug: Upgraded "..SelectedHero)
+							print("[LeGioN Hub] Debug: Upgraded "..SelectedHero)
 						end
 
 						SelectedHero = SelectedHero2
@@ -485,7 +485,7 @@ task.spawn(function()
 		if BuyLooping then
 			for i,v in pairs(SkillsList) do
 				if game:GetService("ReplicatedStorage").Packages._Index:FindFirstChild("sleitnick_knit@1.4.7").knit.Services.HeroService.RF.LearnSkill:InvokeServer(v, i) then
-					print("[Inferno X] Debug: Bought "..v.."'s skill "..i)
+					print("[LeGioN Hub] Debug: Bought "..v.."'s skill "..i)
 					table.remove(SkillsList, table.find(SkillsList, v))
 				end
 			end
@@ -526,7 +526,7 @@ Heroes:CreateButton({
 			Number = Number + 1
 		end
 
-		print("[Inferno X] Debug: Collected "..Number.." Skills")
+		print("[LeGioN Hub] Debug: Collected "..Number.." Skills")
 	end,
 })
 
@@ -558,7 +558,7 @@ EnchantLabel = Passive:CreateLabel("Selected Enchants: None")
 Player.PlayerGui.Main.ChestResult.Container.ChildAdded:Connect(function(child)
 	repeat task.wait() until child.ItemName.Text ~= "OP Sword"
 
-	print("[Inferno X] Debug: Opened "..child.ItemName.Text)
+	print("[LeGioN Hub] Debug: Opened "..child.ItemName.Text)
 
 	if table.find(SelectedEnchants, child.ItemName.Text) then
 		RerollLooping = false
