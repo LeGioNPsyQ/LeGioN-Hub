@@ -8,7 +8,8 @@ local Games = {
 	[11445923563] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/One%20Fruit%20Simulator.lua", -- One Fruit Simulator
 	
 	[11599913094] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/Nuke%20Simulator.lua", -- Nuke Simulator
-	[11746859781] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/BubbleGumSim.lua" -- Bubble Gum Simulator
+	[11746859781] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/BubbleGumSim.lua", -- Bubble Gum Simulator
+	[11620947043] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/FlappyClicker.lua" -- Flappy Clicker
 }
 
 if Games[game.PlaceId] then
