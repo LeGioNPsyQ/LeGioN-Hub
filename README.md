@@ -17,7 +17,7 @@
 
 〉Pet Rift
 
-〉Flappy Clicker
+〉Flappy Clicker (keyless)
 
 〉Bubble Gum Clicker
 
