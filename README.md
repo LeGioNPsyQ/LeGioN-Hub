@@ -17,11 +17,11 @@
 
 〉Pet Rift
 
-〉Flappy Clicker (keyless)
+〉Flappy Clicker (Keyless)
 
 〉Bubble Gum Clicker
 
-〉Pet Legends 2!
+〉Pet Legends 2! (Keyless)
 
 〉 Mining Clicker Simulator
 
