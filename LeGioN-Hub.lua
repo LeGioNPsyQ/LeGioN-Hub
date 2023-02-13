@@ -11,7 +11,7 @@ local Games = {
 	[11746859781] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/BubbleGumSim.lua", -- Bubble Gum Simulator
 	[11620947043] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/FlappyClicker.lua" -- Flappy Clicker
 }
-
+--[[
 if Games[game.PlaceId] then
 	game.StarterGui:SetCore("SendNotification", {
 	    Title = "[LeGioN Hub] Notify";
@@ -26,3 +26,4 @@ else
 	    Duration = 10;
     })
 end
+]]
