@@ -19,6 +19,8 @@
 
 〉Flappy Clicker (Keyless)
 
+〉Bubble Gum Simulator
+
 〉Bubble Gum Clicker
 
 〉Pet Legends 2! (Keyless)
