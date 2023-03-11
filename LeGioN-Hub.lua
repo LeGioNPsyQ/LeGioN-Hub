@@ -3,7 +3,7 @@ local Games = {
 --[[	FAVORITEN	]]
 	[8540346411] 	= "https://raw.githubusercontent.com/KrystekYTpv/Scripts/main/RebirthChampionsX.lua", 						-- Rebirth Chamption X
 	[10404327868] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Timber%20Champions.lua", 		-- Timber Champions
-	[10821317529] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Pickaxe%20Mining%20Simulator.lua", 	-- Pickaxe Mining Simulator
+	[10821317529] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Pickaxe%20Mining%20Simulator.lua", -- Pickaxe Mining Simulator
 
 	[11448052802] 	= "https://raw.githubusercontent.com/danixbo/NoobHub/main/NoobHub", 			-- Pet Rift
 	[11542692507] 	= "https://raw.githubusercontent.com/bunnynwy/games/main/petlegends2", 			-- Pet Legends 2!
