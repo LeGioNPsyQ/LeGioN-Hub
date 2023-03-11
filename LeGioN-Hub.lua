@@ -15,8 +15,9 @@ local Games = {
 
 	[9264596435] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Idle%20Heroes%20Simulator.lua", 	-- Idle Heroes Simulator
 	[10033287610] 	= "https://raw.githubusercontent.com/Pikaruru/Scripts/main/smasherman.lua", 							-- Smasherman Simulator
+	[10674429038] = "https://raw.githubusercontent.com/Pikaruru/Scripts/main/pickaxesim.lua",							-- Pickaxe Simulator
 	[10925589760] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Merge%20Simulator.lua", 		-- Merge Simulator
-	[11254130090] 	= "https://raw.githubusercontent.com/Pikaruru/Scripts/main/pettappingsimulator.lua" 						-- Strongest Tapper Simulator
+	[11254130090] 	= "https://raw.githubusercontent.com/Pikaruru/Scripts/main/pettappingsimulator.lua", 						-- Strongest Tapper Simulator
 	[11445923563] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/One%20Fruit%20Simulator.lua" 	-- One Fruit Simulator
 }
 
