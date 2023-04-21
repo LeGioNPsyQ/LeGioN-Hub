@@ -164,7 +164,7 @@ local function CreateWindow()
 			end
 		end)
 
-		local AutoRejoin = Universal:CreateToggle({
+--		local AutoRejoin = Universal:CreateToggle({
 			Name = "🔁 Auto Rejoin",
 			CurrentValue = false,
 			Flag = "Universal-AutoRejoin",
@@ -186,7 +186,7 @@ local function CreateWindow()
 			end,
 		})
 
-		Universal:CreateToggle({
+--		Universal:CreateToggle({
 			Name = "📶 Auto Re-Execute",
 			CurrentValue = false,
 			Flag = "Universal-AutoRe-Execute",
@@ -201,11 +201,11 @@ local function CreateWindow()
 			end,
 		})
 
-		Universal:CreateSection("Safety")
+--		Universal:CreateSection("Safety")
 
 		local GroupId = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Creator.CreatorTargetId
 
-		Universal:CreateToggle({
+--		Universal:CreateToggle({
 			Name = "🚪 Leave Upon Staff Join",
 			Info = "Kicks you if a player above the group role 1 joins/is in the server",
 			CurrentValue = false,
@@ -235,7 +235,7 @@ local function CreateWindow()
 			end
 		end)
 
-		Universal:CreateSection("Grinding")
+--		Universal:CreateSection("Grinding")
 
 		local function ServerHop()
 			local Http = game:GetService("HttpService")
@@ -263,14 +263,14 @@ local function CreateWindow()
 			until not Next
 		end
 
-		Universal:CreateButton({
+--		Universal:CreateButton({
 			Name = "🔂 One-Time Server Hop",
 			Callback = function()
 				ServerHop()
 			end,
 		})
 
-		Universal:CreateToggle({
+--		Universal:CreateToggle({
 			Name = "🔁 Server Hop",
 			Info = "Automatically server hops after the interval",
 			CurrentValue = false,
@@ -278,7 +278,7 @@ local function CreateWindow()
 			Callback = function(Value)	end,
 		})
 
-		Universal:CreateSlider({
+--		Universal:CreateSlider({
 			Name = "⏲ Server Hop Intervals",
 			Info = "Sets the interval in seconds for the Server Hop",
 			Range = {5, 600},
@@ -296,9 +296,9 @@ local function CreateWindow()
 			end
 		end)
 
-		local Credits = Window:CreateTab("Suggestions", 4483362458)
+--		local Credits = Window:CreateTab("Suggestions", 4483362458)
 
-		Credits:CreateInput({
+--		Credits:CreateInput({
 			Name = "Suggestion",
 			PlaceholderText = "Insert Suggestion Here",
 			NumbersOnly = false,
