@@ -1,36 +1,30 @@
-local Games = {
-	[8540346411] = "https://raw.githubusercontent.com/KrystekYTpv/Scripts/main/RebirthChampionsX.lua", 						-- Rebirth Chamption X
-	[8834250772] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/AttackSimulator.lua", 					-- Attack Simulator
-	[10404327868] = "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Timber%20Champions.lua", 		-- Timber Champions
-	[10821317529] = "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Pickaxe%20Mining%20Simulator.lua", -- Pickaxe Mining Simulator
+local pid = game.PlaceId
+local current = "https://raw.githubusercontent.com/AnonymousErrors/hub1/main/"
+local legihub = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/"
+--[[ Anonymous Hub ]]
+if pid == 6951762614 then			loadstring(game:HttpGet(current.."ufosim.lua"))()
+	elseif pid == 7065731541 then	loadstring(game:HttpGet(current.."speedmansim.lua"))()
+	elseif pid == 7025847767 then	loadstring(game:HttpGet(current.."destroyedkidsim.lua"))()
+	elseif pid == 7363174769 then	loadstring(game:HttpGet(current.."deliverymansim.lua"))()
+	elseif pid == 6766156863 then	loadstring(game:HttpGet(current.."strongmansim.lua"))()
+	elseif pid == 7336128600 then	loadstring(game:HttpGet(current.."PetLegends.lua"))()
+	elseif pid == 6769764667 then	loadstring(game:HttpGet(current.."FactorySimulator.lua"))()
+	elseif pid == 3823781113 then	loadstring(game:HttpGet(current.."sabersimremake2.lua"))()
+--[[ Anonymous Hub END ]]
 
-	[11448052802] = "https://raw.githubusercontent.com/danixbo/NoobHub/main/NoobHub", 			-- Pet Rift
-	[11542692507] = "https://raw.githubusercontent.com/bunnynwy/games/main/petlegends2", 			-- Pet Legends 2!
-	[11599913094] = "https://raw.githubusercontent.com/eufoni02/emperor/main/autocollectnukesim.lua", 	-- Nuke Simulator
-	[11620947043] = "https://raw.githubusercontent.com/danixbo/NoobHub/main/NoobHub", 			-- Flappy Clicker
-	[11746859781] = "https://raw.githubusercontent.com/danixbo/NoobHub/main/NoobHub", 			-- Bubble Gum Clicker
-
---[[	Andere GAMES	]]
-
-[9264596435] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Idle%20Heroes%20Simulator.lua", 	-- Idle Heroes Simulator
-[10033287610] 	= "https://raw.githubusercontent.com/Pikaruru/Scripts/main/smasherman.lua", 							-- Smasherman Simulator
-[10674429038] = "https://raw.githubusercontent.com/Pikaruru/Scripts/main/pickaxesim.lua",							-- Pickaxe Simulator
-[10925589760] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Merge%20Simulator.lua", 		-- Merge Simulator
-[11254130090] 	= "https://raw.githubusercontent.com/Pikaruru/Scripts/main/pettappingsimulator.lua", 						-- Strongest Tapper Simulator
-[11445923563] 	= "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/One%20Fruit%20Simulator.lua" 	-- One Fruit Simulator
-}
-
-if Games[game.PlaceId] then
-	game.StarterGui:SetCore("SendNotification", {
-	    Title = "LeGioN Hub Notify";
-	    Text = "Script is loaded";
-	    Duration = 10;
-    })
-	loadstring(game:HttpGet(Games[game.PlaceId]))()
-else
-	game.StarterGui:SetCore("SendNotification", {
-	    Title = "LeGioN Hub Notify";
-	    Text = "Game not supported";
-	    Duration = 10;
-    })
-end
+--[[ LeGioN Hub ]]
+	elseif pid == 8540346411 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."RebirthChampionX.lua"))()
+	elseif pid == 8834250772 then 	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."AttackSimulator.lua"))() 
+	elseif pid == 9264596435 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."IdleHeroesSimulator.lua"))()
+	elseif pid == 10821317529 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."PickaxeMiningSimulator.lua"))()
+	elseif pid == 10404327868 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."TimberChampions.lua.lua"))()
+	elseif pid == 10925589760 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."MergeSimulator.lua"))()
+	elseif pid == 11445923563 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."OneFruitSimulator.lua"))()
+	elseif pid == 11599913094 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."NukeSimulator.lua"))()
+	elseif pid == 11746859781 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."BubbleGumSim.lua"))()
+	elseif pid == 11620947043 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."FlappyClicker.lua"))()
+	elseif pid == 11746859781 then	game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Script is loaded";Duration = 10;}) loadstring(game:HttpGet(legihub.."BubbleGumClicker.lua"))()
+	
+	else game.StarterGui:SetCore("SendNotification", {Title = "LeGioN Hub Notify";Text = "Game not supported";Duration = 10;})end
+	
+--[[ LeGioN Hub END ]]
