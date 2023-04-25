@@ -1,4 +1,11 @@
 <details>
+<summary>Readme</summary>
+  
+  | Ich Versuche mich hier ein Wenig in CODING-LUA.| 
+  |----------|
+  
+</details>
+<details>
 <summary>LeGioN Hub</summary>
   
 |Nr.| ㅤㅤㅤScripteㅤㅤ|Fav.|
