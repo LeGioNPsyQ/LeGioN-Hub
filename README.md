@@ -1,35 +1,31 @@
-**Favorite Scripts **:
-
-〉Rebirth Champions X
-
-〉Timber Champions
-
+**--[[ LeGioN Hub ]]**:
+_〉Rebirth Champion X
+〉Attack Simulator
+〉Idle Heroes Simulator
 〉Pickaxe Mining Simulator
-
+〉Timber Champions
+〉Merge Simulator
+〉One Fruit Simulator
 〉Nuke Simulator
-
-
-
-
-
-
-**Supported Games **:
-
-〉Pet Rift
-
-〉Flappy Clicker (Keyless)
-
 〉Bubble Gum Simulator
-
+〉Flappy Clicker
 〉Bubble Gum Clicker
+〉Rebirth Champions X
+〉Pet Rift
+_
 
-〉Pet Legends 2! (Keyless)
 
-〉 Mining Clicker Simulator
 
-〉 Idle Heroes Simulator
 
-〉 Merge Simulator
+_Supported Games_
 
-〉 One Fruit Simulator
-
+[ Anonymous Hub ]
+_〉UFO Simulator
+〉SPEED Simulator
+〉Destroyed Kid Simulator
+〉Deliveryman Simulator
+〉Strongman Simulator
+〉Pet Legends
+〉Factory Simulator
+〉Saber Simulator Remake 2
+_
