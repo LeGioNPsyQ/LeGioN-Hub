@@ -1,6 +1,6 @@
 local Games = {
 	[8540346411] = "https://raw.githubusercontent.com/KrystekYTpv/Scripts/main/RebirthChampionsX.lua", 						-- Rebirth Chamption X
-	[8834250772] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/AttackSimulator.lua" 					-- Attack Simulator
+	[8834250772] = "https://raw.githubusercontent.com/LeGioNPsyQ/LeGioN-Hub/main/Games/AttackSimulator.lua", 					-- Attack Simulator
 	[10404327868] = "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Timber%20Champions.lua", 		-- Timber Champions
 	[10821317529] = "https://raw.githubusercontent.com/LeGioNPsyQ/Scripts/main/DevilNetWork%20X%20Scripts/Games/Pickaxe%20Mining%20Simulator.lua", -- Pickaxe Mining Simulator
 
