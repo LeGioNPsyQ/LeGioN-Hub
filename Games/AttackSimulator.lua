@@ -60,7 +60,7 @@ local Window = OrionLib:MakeWindow({
 --[[
 	##	TAB SECTION 
 ]]
-local Main = Window:MakeTab({Name = "Main",icon = "rbxassetid://7733765398",PremiumOnly = false})
+local Main = Window:MakeTab({Name = "Main",Icon = "rbxassetid://7733765398",PremiumOnly = false})
 local Pets = Window:MakeTab({Name = "Pets",Icon = "rbxassetid://8997385940",PremiumOnly = false})
 -- local Rebirth = Window:MakeTab({Name = "Rebirth",Icon = "rbxassetid://7733942651",PremiumOnly = false})
 -- local Teleport = Window:MakeTab({Name = "Teleport",Icon = "rbxassetid://7733954760",PremiumOnly = false})
