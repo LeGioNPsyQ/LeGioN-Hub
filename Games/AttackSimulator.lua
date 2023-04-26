@@ -18,8 +18,7 @@ _EggDELLegendary = false
 --[[
 	##	TIMER
 ]]
-local RebirthTimer = "5"
-local HatchTimer = "5"
+
 --[[
 	##	GUI LOAD LOCAL
 ]]
@@ -209,10 +208,10 @@ Pets:AddToggle({
 	end,
 })
 Pets:AddSection({Name = "Auto Delete"})
-Pets:AddToggle({Name = "🗑️ Common",CurrentValue = false,Callback = function(bool)	if bool then _EggDELUnCommon = true else _EggDELCommon = false end end,	})
-Pets:AddToggle({Name = "🗑️ Uncommon",CurrentValue = false,Callback = function(bool) if bool then _EggDELUncommon = true	 else _EggDELUncommon = false	end end,})
-Pets:AddToggle({Name = "🗑️ Epic",CurrentValue = false,Callback = function(bool) if bool then _EggDELEpic = true	else _EggDELEpic = false end	end,})
-Pets:AddToggle({Name = "🗑️ Legendary",CurrentValue = false,Callback = function(bool) if bool then _EggDELLegendary = true	else _EggDELLegendary = false end end,})
+Pets:AddToggle({Name = "🗑️ Common",CurrentValue = false,Callback = function(bool) if bool then _EggDELUnCommon = true else _EggDELCommon = false end end,	})
+Pets:AddToggle({Name = "🗑️ Uncommon",CurrentValue = false,Callback = function(bool) if bool then _EggDELUncommon = true else _EggDELUncommon = false	end end,})
+Pets:AddToggle({Name = "🗑️ Epic",CurrentValue = false,Callback = function(bool) if bool then _EggDELEpic = true else _EggDELEpic = false end	end,})
+Pets:AddToggle({Name = "🗑️ Legendary",CurrentValue = false,Callback = function(bool) if bool then _EggDELLegendary = true else _EggDELLegendary = false end end,})
 function EggA()
     while EggHatch == true do 
         if not getgenv then break end 
@@ -283,8 +282,10 @@ Credits:AddParagraph(
 	"😈 DevilNetWork v1.0",
 	"Is a Script from Testiing on LUA-Codiung	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 		 	 	 	 	 	 DevilNetWork Owner © LeGioN_PsyQ"
 )
-Credits:AddParagraph("Paragraph","Paragraph Content")
-
+Credits:AddParagraph(
+	"Coding Helper:",
+	"LeGioN_PsyQ"
+)
 
 OrionLib:MakeNotification({
 	Name = "GUI",
@@ -292,10 +293,10 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-OrionLib:MakeNotification({
-	Name = "GUI",
-	Content = "Copied link to the Discord server!",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
+--OrionLib:MakeNotification({
+--	Name = "GUI",
+--	Content = "Copied link to the Discord server!",
+--	Image = "rbxassetid://4483345998",
+--	Time = 5
+--})
 OrionLib:Init()
